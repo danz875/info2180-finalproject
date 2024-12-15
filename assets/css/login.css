@@ -1,0 +1,66 @@
+@import url('../css/styles.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 25rem;
+    padding: var(--space-lg);
+    border: 0.0625rem solid var(--accent);
+    border-radius: var(--space-sm);
+    box-shadow: 0 0 0.625rem rgba(0,0,0,0.1);
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.login-container h3 {
+    text-align: center;
+}
+
+.form-group {
+    margin: var(--space-md) 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+.form-group input, button {
+    width: 100%;
+    padding: var(--space-sm);
+    border-radius: var(--space-xs);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group input {
+    border: 0.0625rem solid var(--secondary);
+    background-color: var(--background);
+    color: var(--text);
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+    cursor: pointer;
+    margin-top: var(--space-md);
+}
+
+button:hover {
+    background-color: var(--accent);
+}
+
+.error {
+    color: #ff0000;
+    margin: var(--space-md) 0;
+    text-align: center;
+}
