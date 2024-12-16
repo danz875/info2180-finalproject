@@ -1,4 +1,3 @@
-// assets/js/users.js
 $(document).ready(function() {
     // Toggle to add user view
     $('#add-user-btn').click(function(e) {

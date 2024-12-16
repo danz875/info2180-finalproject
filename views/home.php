@@ -1,4 +1,3 @@
-
 <div class="dashboard-header">
     <h2>Dashboard</h2>
     <a href="#" class="btn-primary" data-page="new-contact">Add Contact</a>

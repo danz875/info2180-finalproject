@@ -10,3 +10,9 @@ try {
 } catch(PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
+
+function getUsers() {
+    global $conn;
+    $stmt = $conn->query("SELECT id, firstname, lastname FROM Users");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}

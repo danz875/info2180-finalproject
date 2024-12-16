@@ -41,6 +41,12 @@
                         $.getScript('assets/js/users.js');
                     }, 100);
                 }
+                else if (page === 'new-contact') {
+                    $('head').append('<link rel="stylesheet" href="assets/css/add_user.css">');
+                    setTimeout(function() {
+                        $.getScript('assets/js/users.js');
+                    }, 100);
+                }
             }
         });
     };
@@ -63,6 +69,20 @@
         // Handle events from loaded content
         $(document).on('navigate', function(e, page) {
             loadContent(page);
+        });
+    });
+
+    // Add logout handler
+    $(document).ready(function() {
+        $('a[href="logout.php"]').click(function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: 'logout.php',
+                method: 'POST',
+                success: function() {
+                    window.location.href = 'login.php';
+                }
+            });
         });
     });
 })(jQuery);
