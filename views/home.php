@@ -1,7 +1,6 @@
 <div class="dashboard-header">
     <h2>Dashboard</h2>
-    <a href="#" class="btn-primary" data-page="new-contact">Add Contact</a>
-</div>
+    <!-- <a href="#" class="btn-primary" data-page="new-contact">Add Contact</a> --></div>
 <div class="filter-container">
     <button class="filter-btn active" data-filter="all">All Contacts</button>
     <button class="filter-btn" data-filter="sales">Sales Leads</button>

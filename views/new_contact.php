@@ -21,7 +21,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="dashboard-header">
     <h2>Create New Contact</h2>
-    <button onclick="window.history.back()" class="btn-primary">Back to Dashboard</button>
+    <!-- <button onclick="window.history.back()" class="btn-primary">Back to Dashboard</button> -->
 </div>
 
 <div class="add-user-container">

@@ -20,7 +20,7 @@ if ($_SESSION['user_role'] !== 'admin') {
 
 <div class="dashboard-header">
     <h2>Add New User</h2>
-    <button onclick="" class="btn-primary">Back to Users</button>
+    <!-- <button onclick="" class="btn-primary">Back to Users</button> -->
 </div>
 
 <div class="add-user-container">

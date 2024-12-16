@@ -1,7 +1,6 @@
-// assets/js/dashboard.js
 (function($) {
     // Make loadPage function globally accessible
-    window.loadContent = function(page) {
+    window.loadContent = function(page, params = {}) {
         let url;
         switch(page) {
             case 'home':
@@ -15,6 +14,9 @@
                 break;
             case 'add-user':
                 url = 'views/add_user.php';
+                break;
+            case 'view-contact':
+                url = `views/view_contact.php?id=${params.id}`;
                 break;
             default:
                 url = 'views/home.php';
@@ -47,6 +49,9 @@
                         $.getScript('assets/js/users.js');
                     }, 100);
                 }
+                else if (page === 'view-contact') {
+                    $('head').append('<link rel="stylesheet" href="assets/css/styles.css">');
+                }
             }
         });
     };
@@ -67,8 +72,10 @@
         });
 
         // Handle events from loaded content
-        $(document).on('navigate', function(e, page) {
-            loadContent(page);
+        $(document).on('click', '[data-page="view-contact"]', function(e) {
+            e.preventDefault();
+            const contactId = $(this).data('id');
+            loadContent('view-contact', { id: contactId });
         });
     });
 
