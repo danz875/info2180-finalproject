@@ -13,7 +13,6 @@ requireLogin();
     <title>Dolphin CRM - Dashboard</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="dashboard-container">
@@ -38,6 +37,7 @@ requireLogin();
             </div>
         </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/dashboard.js"></script>
 </body>
 </html>
