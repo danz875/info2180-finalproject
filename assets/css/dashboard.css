@@ -1,0 +1,59 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 15.625rem 1fr;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.sidebar {
+    background-color: var(--tertiary);
+    padding: var(--space-md);
+}
+
+.logo {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: var(--space-lg);
+}
+
+.user-info {
+    margin-bottom: var(--space-md);
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--background);
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: var(--space-sm);
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    display: block;
+    padding: var(--space-sm);
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.content {
+    padding: var(--space-lg);
+    background-color: var(--background);
+}
+
+#dashboard-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
