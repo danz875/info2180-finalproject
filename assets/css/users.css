@@ -1,0 +1,52 @@
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+}
+
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--background);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.users-table-container {
+    background: var(--background);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+    padding: var(--space-sm) var(--space-md);
+    text-align: left;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.users-table th {
+    background-color: var(--secondary);
+    color: var(--text);
+    font-weight: 600;
+}
+
+.users-table tr:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+.no-users {
+    text-align: center;
+    padding: var(--space-md);
+    color: var(--text);
+    font-style: italic;
+}
